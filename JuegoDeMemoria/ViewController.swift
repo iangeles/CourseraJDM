@@ -33,6 +33,12 @@ for var serie = 0; serie <= 100; serie++ {
     case rango where rango % 5 == 0 && rango % 2 != 0 && (rango >= 30 && rango <= 40):
         print("\(rango)\tBingo!!!\tImpar!!!\tViva Swift!!!") //: Números que cumplen con las reglas: 1, 3 y 4
         
+    case rango where rango % 5 == 0 && rango % 2 == 0:
+        print("\(rango)\tBingo!!!\tPar!!!") //: Números que cumplen con las reglas: 1 y 2
+        
+    case rango where rango % 5 == 0 && rango % 2 != 0:
+        print("\(rango)\tBingo!!!\tImpar!!!") //: Números que cumplen con las reglas: 1 y 3
+        
     case rango where rango % 2 == 0 && (rango >= 30 && rango <= 40):
         print("\(rango)\tPar!!!\tViva Swift!!!") //: Números que cumplen con las reglas: 2 y 4
         
@@ -49,5 +55,3 @@ for var serie = 0; serie <= 100; serie++ {
         print("\(rango)") //: el default son aquellos que no cumplen ninguna de las condiciones anteriores
     }
 }
-
-
